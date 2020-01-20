@@ -1,0 +1,9 @@
+bin/
+lib/
+log/
+data/
+publish/
+result/
+target/
+.backup/
+*.class
