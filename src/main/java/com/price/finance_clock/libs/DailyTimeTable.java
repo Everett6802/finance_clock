@@ -1,22 +1,15 @@
 package com.price.finance_clock.libs;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.regex.*;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-//import com.price.finance_clock.FinanceClock;
-//import com.price.finance_clock.common.CmnClass;
 import com.price.finance_clock.common.CmnDef;
 import com.price.finance_clock.common.CmnFunc;
 import com.price.finance_clock.common.CmnVar;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DailyTimeTable 
 {
@@ -94,18 +87,18 @@ public class DailyTimeTable
 			this.description = description;
 		}
 		
-//		public ClockEntry(String time_str, boolean repeat, int action, String description)
-//		{
-//			this.time_str = time_str;
-//			this.repeat = repeat;
-//			this.action = action;
-//			this.description = description;
-//		}
-//		
-//		public ClockEntry(String time_str, boolean repeat, int action)
-//		{
-//			this(time_str, repeat, action, "");
-//		}
+		public ClockEntry(String time_str, boolean repeat, int action, String description)
+		{
+			this.time_str = time_str;
+			this.repeat = repeat;
+			this.action = action;
+			this.description = description;
+		}
+
+		public ClockEntry(String time_str, boolean repeat, int action)
+		{
+			this(time_str, repeat, action, "");
+		}
 	};
 
 
